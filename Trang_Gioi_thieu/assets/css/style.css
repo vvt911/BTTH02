@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.nav-img{
+    text-align: center;
+    font-size: 15px;
+    vertical-align: middle;
+    display: flex;
+    width: 244px;
+    height: 70px;
+
+}
+.nav-list {
+   display: inline-block;
+}
+
+.nav-list, .subnav{
+    list-style: none;
+}
+
+.nav-list > li{
+    display: inline-block;
+}
+
+.nav-list li{
+    position: relative;
+}
+
+.nav-list > li > a{
+    color:black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Archivo", Sans-serif;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 15px 0 15px;
+    display: block;
+}
+
+.nav-list li:hover .subnav{
+    display: block;
+}
+
+.nav-list > li:hover > a{
+    color: rgb(51, 51, 97);
+    background-color: whitesmoke
+}
+
+.nav-list .subnav{
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgb(39, 31, 31);
+}
+
+.nav-list .subnav a{
+    color: black;
+}
+
+.nav-list .subnav li:hover{
+    color: red; 
+    
+}
+
+.subnav > li > a{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* content */
+
+#content-wrap {
+    overflow: hidden;
+    width: 1200px;
+    height: auto;
+    padding: 0 30px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content-area {
+    display: block;
+    float: left;
+    padding: 0 30px 0 0 ;
+    width: 798px;
+    height: auto;
+}
+.content-date {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-date a {
+    text-decoration: none;
+    color: black;
+}
+.content-date hr {
+    margin: 20px 0;
+}
+.like-share span {
+    font-size: 14px;
+    background-color: blue;
+    margin: 0 15px;
+    border-radius: 3px;
+    color: #fff;
+}
+.like-share span:hover {
+    cursor: pointer;
+}
+.content-area .about h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 15px 0;
+}
+.content-area .about p {
+    font-size: 16px;
+    justify-content: center;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.content-area .achievement {
+    padding: 10px;
+    font-size: 16px;
+}
+.content-area h4 {
+    font-size: 17px;
+    color: #0B249E;
+    margin: 30px 0;
+}
+.content-area p {
+    text-align: justify;
+}
+.content-area ul{
+    margin: 0 0 0 20px;
+    line-height: 1.8;
+}
+.content-area p {
+    line-height: 1.6;
+    margin: 15px 0;
+}
+.content-area .edu-quality i {
+    font-weight: 700;
+    margin: 0 10px 0 0;
+}
+.content-area .edu-quality ul li {
+    font-size: 15px;
+    padding: 15px 20px;
+    width: 644px;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    font-weight: 700;
+}
+.content-area .detail {
+    text-decoration: none;
+    color: #0B249E;
+    font-weight: 600;
+}
+.content-area .fanpage {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* slide bar */
+.right-slidebar {
+    padding: 20px 0 0 80px;
+    width: 342px;
+    height: auto;
+    display: block;
+    float: left;
+}
+.right-slidebar .fanpage{
+    width: 262px;
+    height: 115px;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+.right-slidebar .fanpage > img {
+    width: 262px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.right-slidebar .fanpage .fanpage-info img {
+    width: 54px;
+}
+.right-slidebar .fanpage .fanpage-info {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+}
+.right-slidebar .fanpage .fanpage-info p {
+    color: #fff;
+    margin-left: 5px;
+}
+.adse,
+.fullstack,
+.acna,
+.java,
+.dot-net,
+.scholarship {
+    width: 262px;
+    height: 140px;
+    margin: 0 0 40px 0;
+} 
+.right-slidebar h4 {
+    font-size: 15px;
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+}
+.right-slidebar img {
+    width: 262px;
+}
+
+.registration input[type='text'] {
+    width: 262px;
+    height: 39.5px;
+    font-size: 15px;
+    padding: 0 0 0 15px;
+    display: inline-block;
+    /* border: none; */
+    background-color: rgba(231, 212, 212, 0.9);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.registration p {
+    width: 262px;
+    height: 39.5px;
+    border: 1px solid rgb(168, 167, 167);
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    line-height: 39.5px;
+}
+.registration i {
+    margin-left: 160px;
+}
+.registration button {
+    font-size: 16px;
+    width: 262px;
+    height: 44px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 40px 0 30px 0;
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+}
+.registration button:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.right-slidebar .news hr {
+    margin: 10px 0;
+}
+
+
+.partner {
+    width: 1380px;
+    height: 282px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.partner h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 35px 0;
+}
+.partner .partner-logo {
+    overflow: hidden;
+}
+.partner .logo{
+    display: block;
+    float: left;
+    width: 270px;
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner .logo img {
+    max-width: 270px;
+}
