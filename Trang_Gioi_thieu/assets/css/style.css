@@ -273,6 +273,7 @@ html {
 .registration button:hover {
     background-color: blue;
     color: #fff;
+    cursor: pointer;
 }
 
 .right-slidebar .news hr {
@@ -297,7 +298,6 @@ html {
     overflow: hidden;
 }
 .partner .logo{
-    display: block;
     float: left;
     width: 270px;
     height: 185px;
@@ -307,4 +307,115 @@ html {
 }
 .partner .logo img {
     max-width: 270px;
+}
+
+.footer {
+    width: 100%;
+    height: 490px;
+    background-color: #2F319E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .info {
+    float: left;
+    width: 500px;
+    height: 360px;
+    padding: 0 40px;
+}
+.footer h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0 0 20px;
+}
+.footer .course li{
+    font-size: 16px;
+    padding: 10px 0 10px 15px;
+    list-style-type: none;
+}
+.footer .course li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer .fanpage{
+    width: 262px;
+    height: 115px;
+    margin: 30px 0 40px 20px;
+    position: relative;
+}
+.footer .fanpage > img {
+    width: 262px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.footer .fanpage .fanpage-info img {
+    width: 54px;
+}
+.footer .fanpage .fanpage-info {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+}
+.footer .fanpage .fanpage-info p {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.footer .contact li {
+    font-size: 16px;
+    padding: 10px 0 10px 0px;
+    list-style-type: none;
+}
+.footer .contact li a {
+    text-decoration: none;
+}
+.footer .contact li span {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.footer .regist input[type='text'] {
+    width: 340px;
+    height: 39.5px;
+    font-size: 15px;
+    padding: 0 0 0 15px;
+    display: inline-block;
+    /* border: none; */
+    background-color: rgb(229, 244, 245);
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.footer .regist p {
+    width: 340px;
+    height: 39.5px;
+    border: 1px solid rgb(168, 167, 167);
+    background-color: rgb(229, 244, 245);
+    padding: 0 0 0 15px;
+    margin: 5px 0;
+    line-height: 39.5px;
+}
+.footer .regist i {
+    margin-left: 238px;
+}
+.footer .regist button {
+    font-size: 16px;
+    width: 340px;
+    height: 44px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 40px 0 30px 0;
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+}
+.footer .regist button:hover {
+    background-color: rgb(152, 152, 230);
+    cursor: pointer;
+    color: #fff;
 }
