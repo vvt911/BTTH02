@@ -22,10 +22,10 @@
             <img src="./assets/img/logo.webp" alt="aptech-logo">
         </div>
         <ul class="nav-list">
-            <li><a href="#" onclick="redirectPage('home')">Trang chủ</a></li>
+            <li><a href="#" >Trang chủ</a></li>
             <li><a href="#">HANOI-APTECH</a>
                 <ul class="subnav">
-                    <li><a href="#" onclick="redirectPage('intro')">Giới thiệu</a></li>
+                    <li><a href="../Trang_Gioi_thieu/index.html">Giới thiệu</a></li>
                     <li><a href="#">Cơ sở vật chất</a></li>
                     <li><a href="#">Giảng viên</a></li>
                     <li><a href="#">Hỏi đáp</a></li>
@@ -563,45 +563,7 @@
         </div>
     </div>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-
-        function redirectPage(source) {
-            console.log(source);
-            let intro = document.getElementById("content-wrap");
-            let home = document.getElementById("container");
-            console.log(home);
-            console.log(intro);
-            if (source === "intro") {
-                intro.style.display = "block";
-                home.style.display = "none";
-            } else if (source === "home") {
-                intro.style.display = "none";
-                home.style.display = "block";
-            }
-        }
-    </script>
+    
 </body>
 
 </html>
